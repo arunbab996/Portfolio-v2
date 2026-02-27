@@ -77,7 +77,6 @@ function AppContent() {
     localStorage.setItem('theme', newTheme);
   };
 
-  // The dictator useEffect: enforces the theme on every single page load
   useEffect(() => {
     if (isPhotography || theme === 'dark') {
       document.documentElement.classList.add('dark-theme');
@@ -86,10 +85,10 @@ function AppContent() {
       document.documentElement.classList.remove('dark-theme');
       document.body.classList.remove('dark-theme');
     }
-  }, [theme, isPhotography, location.pathname]);
+  }, [theme, isPhotography]);
 
   return (
-    <Routes location={location}>
+    <Routes location={location} key={location.pathname}>
       <Route element={<MainLayout theme={theme} toggleTheme={toggleTheme} isPhotography={isPhotography} />}>
         <Route element={
           <AnimatePresence mode="wait">
