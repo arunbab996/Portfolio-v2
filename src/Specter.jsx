@@ -5,8 +5,6 @@ import './Specter.css';
 export default function Specter() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.body.style.background = '#f9fafb';
-    return () => { document.body.style.background = '#dbe2eb'; };
   }, []);
 
   return (
