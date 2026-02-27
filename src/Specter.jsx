@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Specter.css';
+//import './Specter.css';
 
 export default function Specter() {
   useEffect(() => {
