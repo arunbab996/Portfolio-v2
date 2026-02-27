@@ -1,0 +1,51 @@
+/* src/Swiggy.css */
+.swiggy-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  color: #111827;
+  -webkit-font-smoothing: auto; /* Restores thicker Apple font rendering */
+  -moz-osx-font-smoothing: auto;
+  padding: 40px 24px;
+}
+
+.swiggy-wrapper .container { max-width: 720px; margin: 0 auto; }
+.swiggy-wrapper a.back { font-size: 14px; color: #9ca3af; text-decoration: none; display: inline-block; margin-bottom: 10px; transition: color 0.2s; }
+.swiggy-wrapper a.back:hover { color: #111827; }
+
+.swiggy-wrapper h1 { font-size: 32px; font-weight: 600; margin: 12px 0 4px 0; }
+
+.swiggy-wrapper .hero { width: 100%; border-radius: 6px; margin-bottom: 28px; overflow: hidden; background-color: #eee; }
+.swiggy-wrapper .hero img { width: 100%; height: auto; display: block; border-radius: 6px; }
+
+.swiggy-wrapper h2 { font-size: 20px; margin: 28px 0 10px; font-weight: 600; }
+.swiggy-wrapper h3 { font-size: 16px; margin: 12px 0 8px; }
+.swiggy-wrapper p { font-size: 17px; line-height: 1.55; margin: 0 0 14px; color: #172031; }
+.swiggy-wrapper ul { margin: 8px 0 14px 20px; line-height: 1.5; color: #172031; }
+.swiggy-wrapper ul li { margin: 6px 0; }
+
+.swiggy-wrapper .figure { margin: 18px 0; text-align: center; }
+.swiggy-wrapper .figure img { max-width: 540px; width: 100%; border-radius: 8px; border: 1px solid #eef2f7; display: block; margin: 0 auto; }
+.swiggy-wrapper figcaption { font-size: 13px; color: #6b7280; margin-top: 8px; text-align: center; }
+
+.swiggy-wrapper .table-wrap { margin: 12px 0 18px; display: flex; justify-content: center; overflow-x: auto; padding: 6px 0; }
+.swiggy-wrapper .table-card { background: #fff; border-radius: 10px; border: 1px solid #e6edf3; box-shadow: 0 6px 20px rgba(15,23,36,0.04); overflow: hidden; min-width: 320px; }
+.swiggy-wrapper table { width: 100%; border-collapse: collapse; font-size: 15px; color: #172031; }
+.swiggy-wrapper thead tr { background: #f6f9fb; }
+.swiggy-wrapper th, .swiggy-wrapper td { padding: 12px 14px; border-bottom: 1px solid #e6edf3; text-align: left; }
+.swiggy-wrapper th { font-weight: 600; color: #0f1724; }
+.swiggy-wrapper tbody tr:last-child td { border-bottom: none; }
+.swiggy-wrapper table tr:hover { background: rgba(11,99,214,0.03); }
+
+/* Animations */
+@keyframes swiggyFadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.swiggy-wrapper .animate-entry { opacity: 0; animation: swiggyFadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.swiggy-wrapper .delay-1 { animation-delay: 0.1s; } 
+.swiggy-wrapper .delay-2 { animation-delay: 0.2s; }
+.swiggy-wrapper .delay-3 { animation-delay: 0.3s; } 
+.swiggy-wrapper .delay-4 { animation-delay: 0.4s; }
+
+@media (max-width:520px) {
+  .swiggy-wrapper .container { max-width: 520px; }
+  .swiggy-wrapper h1 { font-size: 28px; }
+  .swiggy-wrapper p { font-size: 15px; }
+  .swiggy-wrapper .figure img { max-width: 100%; }
+}

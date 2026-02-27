@@ -1,0 +1,131 @@
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './Specter.css';
+
+export default function Specter() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.style.background = '#f9fafb';
+    return () => { document.body.style.background = '#dbe2eb'; };
+  }, []);
+
+  return (
+    <div className="specter-wrapper">
+      <div className="container">
+        <Link to="/portfolio" className="back">← Back</Link>
+
+        <div className="animate-entry delay-1">
+          <h1>Specter Talent</h1>
+          <div className="meta-line">Building the founder discovery engine powering modern startup scouting</div>
+        </div>
+
+        <img 
+          className="hero animate-entry delay-2" 
+          src="/portfolio/specter/images/hero.jpg" 
+          alt="Specter Talent hero" 
+          fetchPriority="high"
+          decoding="async" 
+        />
+
+        <section className="animate-entry delay-3">
+          <h2>1. The Core Problem in Venture Discovery.</h2>
+          <p>My journey with Specter began as an intern, joining a small team trying to solve one question that always frustrated investors: why do funds learn about promising founders so late?</p>
+          <p>By the time a company officially surfaces through a funding announcement, a landing page, or a Product Hunt launch, most serious conversations have already happened behind the scenes. Investors needed a way to understand entrepreneurial intent before any “public company signal” existed.</p>
+          <p>That problem became the foundation of Specter Talent. The product was built on the belief that early signals hide in plain sight, and if we could learn how to capture them, we could give investors a view of the future before it became obvious. Over the next five years, I went from supporting its early experiments to building its signal logic, leading the product, and helping shape how Talent detects founders long before anyone else knows they’re building.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>2. First Hypothesis: New Companies as the Primary Signal.</h2>
+          <p>In the earliest phase, we tried to detect “New Companies.” We thought that new entities forming online would always be the first and most relevant signal. We scraped incorporations, domain registrations, fresh landing pages, half-formed product listings, and tiny web footprints.</p>
+          <p>The premise seemed reasonable, but repeated failures showed us the opposite. Many company entries were experimental or never went anywhere. More importantly, we kept finding cases where the founder’s decision to build began much earlier than the company’s public trace.</p>
+          <p>If the company signal was arriving late, then we had to look further upstream.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>3. Breakthrough Insight: Founders Always Surface Before Companies.</h2>
+          <p>While reviewing thousands of raw signals manually, one pattern repeated consistently: people reveal intent much earlier than companies do.</p>
+          <p>They update LinkedIn bios to “Stealth,” begin GitHub repos aligned with problem spaces, join accelerators before launching publicly, add themselves to founder databases, or leave subtle breadcrumbs after exiting previous roles.</p>
+          <p>The strongest signal we found: a person leaving a role and adding a stealth marker soon after. That behavior correlated tightly with genuine intent to build.</p>
+          <p>This gave us the direction for Talent: a founder-first discovery layer.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>4. Evolving the North Star Metric: Weekly New Founders Discovered</h2>
+          <p>Once we realized the earliest signals exist at the founder level, we changed how we measured success. Initially, we tracked new companies surfaced per week — but that signal was too late and too noisy.</p>
+          <p>The new North Star became: <strong>weekly new founders discovered.</strong></p>
+          <p>This matched the natural rhythm of strong signals and provided room for verification, enrichment, and context-building. It also forced discipline: fewer false positives, more relevant detections, and deeper founder profiles.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>5. My Role and Journey: From Intern to Investment Analyst to Leading Talent.</h2>
+          <p>I joined Specter after cold-mailing Marco, the co-founder, and became deeply embedded in building Talent’s intelligence. The work was intensely hands-on — scraping sources, parsing unstructured text, reconciling names, rejecting weak signals, validating hypotheses, and debating logic with engineers across multiple countries.</p>
+          <p>I learned indirectly from VC users through demo call summaries, feedback threads, and forwarded conversations. Over time, patterns emerged around which metadata they valued most — background, previous experience, education, location, sector, or technical ability. Each repeated request eventually became part of Talent’s enrichment logic.</p>
+          <p>As the system matured, I moved into an Investment Analyst role and eventually led Talent. That meant refining signal logic, managing enrichment cycles, curating weekly discoveries, fixing broken scrapes, and continuously evolving the product as founder behavior changed.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>6. Early Delivery: From CSV Files to Zoho Creator.</h2>
+          <p>Talent began as weekly CSV exports. These simple files validated that founder-first discovery resonated with investors — even without UI.</p>
+          <p>But CSVs stripped context and made meaningful signals feel flat. Our first UI was built on Zoho Creator — functional, but too limited to express the depth of Talent’s intelligence.</p>
+          <p>This disconnect eventually pushed us to build a dedicated interface that could represent signal strength, founder context, sequences of events, and the entire footprint of early intent.</p>
+
+          <figure className="figure-card">
+            <img src="/portfolio/specter/images/image1.png" alt="Old UI for Specter Talent" loading="lazy" decoding="async" />
+            <figcaption>Old UI for Specter Talent.</figcaption>
+          </figure>
+
+          <figure className="figure-card">
+            <img src="/portfolio/specter/images/image2.png" alt="New UI for Specter Talent" loading="lazy" decoding="async" />
+            <figcaption>New UI for Specter Talent.</figcaption>
+          </figure>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>7. Signal Design and the Birth of the Signal Score.</h2>
+          <p>Not all signals are equal. A domain registration with no surrounding activity means little. A stealth keyword added immediately after leaving a role means much more.</p>
+          <p>Through thousands of samples, we learned how timing, context, and event sequencing correlate with genuine founder intent.</p>
+          <p>This evolved into the <strong>Signal Score</strong> — a quantitative measure that ranks founder credibility based on strength, timing, and cross-source validation. It made Talent more discerning and reduced noise dramatically.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>8. Understanding User Needs Through Second-Degree Conversations.</h2>
+          <p>I didn’t speak directly to VC users, but I learned from what filtered back through the team: repeated requests for metadata fields, questions about missing context, confusion around certain attributes.</p>
+          <p>These second-degree insights shaped Talent’s information architecture more than anything else. Location, education, experience, contextual notes — all emerged from recurring friction points.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>9. A Weekly Feed of Founder Discovery.</h2>
+          <p>One of Talent’s most powerful surfaces was the weekly founder feed. It showed emerging markets before they existed.</p>
+          <p>Some weeks saw clusters around automation, others around AI, climate, or fintech. Seeing founders before companies helped analysts anticipate where innovation energy was moving.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>10. Talent as a Revenue Driver: The Product That Carried Specter.</h2>
+          <p>Today, Talent contributes roughly 60% of Specter’s revenue. It stands out because it delivers what most platforms cannot: visibility into people before they become companies.</p>
+          <p>From a CSV experiment to a core business engine, Talent proved that founder intelligence is commercially essential.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>11. The Front-End Evolution: Reflecting the Intelligence We Built.</h2>
+          <p>Building a dedicated interface changed everything. Profiles gained structure, signals gained clarity, and stories became traceable.</p>
+          <p>The UI finally reflected the intelligence we had been building for years — helping analysts interpret early intent as a coherent narrative rather than scattered breadcrumbs.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>12. What Building Talent Taught Me.</h2>
+          <p>Five years of working on Talent taught me how noisy, ambiguous, and unstructured early-stage markets really are — and how much clarity emerges when you study the noise long enough.</p>
+          <p>I learned to read digital exhaust as direction, distinguish weak fingerprints from strong intent, and identify founders long before their companies appear.</p>
+          <p>It reshaped how I think about products, data, and venture ecosystems.</p>
+        </section>
+
+        <section className="animate-entry delay-4">
+          <h2>13. Closing Reflection.</h2>
+          <p>Specter Talent began as a question about companies, but became a study of the people behind them. Entrepreneurial intent leaks early — if you know how to look for it.</p>
+          <p>I’m grateful I got to help build a system that detects these individuals at their earliest moments. Those years shaped how I think about venture, innovation, and discovery.</p>
+          <p>If you want to see what’s coming next, you follow the builders first.</p>
+        </section>
+
+      </div>
+    </div>
+  );
+}

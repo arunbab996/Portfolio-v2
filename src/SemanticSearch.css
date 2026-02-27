@@ -1,0 +1,41 @@
+/* src/SemanticSearch.css */
+.semantic-search-wrapper {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111219;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  padding: 60px 24px 80px;
+}
+
+.semantic-search-wrapper .container { max-width: 680px; margin: 0 auto; }
+
+.semantic-search-wrapper a.back { font-size: 14px; font-weight: 600; color: #5b6066; text-decoration: none; display: inline-block; margin-bottom: 24px; transition: color 0.2s; }
+.semantic-search-wrapper a.back:hover { color: #111219; }
+
+.semantic-search-wrapper h1 { font-size: 32px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em; line-height: 1.2; }
+.semantic-search-wrapper h2 { font-size: 22px; margin: 48px 0 16px 0; font-weight: 700; letter-spacing: -0.01em; }
+.semantic-search-wrapper h3 { font-size: 17px; margin: 48px 0 16px 0; font-weight: 700; color: #111219; letter-spacing: -0.01em; }
+.semantic-search-wrapper .meta-line { font-size: 15px; color: #5b6066; margin-bottom: 32px; }
+
+.semantic-search-wrapper p { font-size: 17px; margin: 0 0 24px 0; color: #333; line-height: 1.6; }
+
+.semantic-search-wrapper img.hero, 
+.semantic-search-wrapper img.content-img { 
+  width: 100%; height: auto; border-radius: 8px; margin: 24px 0 40px 0; object-fit: cover; background-color: #f4f5f7; border: 1px solid rgba(0,0,0,0.06); display: block; 
+}
+
+/* Table Styles */
+.semantic-search-wrapper .table-wrapper { margin: 16px 0 40px 0; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+.semantic-search-wrapper .comparison-table { width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 15px; table-layout: fixed; }
+.semantic-search-wrapper .comparison-table th { text-align: left; padding: 16px 24px; border-bottom: 1px solid #e5e7eb; background-color: #f9fafb; color: #374151; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; width: 50%; }
+.semantic-search-wrapper .comparison-table td { padding: 20px 24px; border-bottom: 1px solid #e5e7eb; vertical-align: top; line-height: 1.5; color: #374151; width: 50%; box-sizing: border-box; }
+.semantic-search-wrapper .comparison-table tr:last-child td { border-bottom: none; }
+.semantic-search-wrapper .comparison-table th:first-child,
+.semantic-search-wrapper .comparison-table td:first-child { border-right: 1px solid #e5e7eb; color: #111827; }
+
+/* Animations */
+@keyframes semanticFadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.semantic-search-wrapper .animate-entry { opacity: 0; animation: semanticFadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.semantic-search-wrapper .delay-1 { animation-delay: 0.1s; } 
+.semantic-search-wrapper .delay-2 { animation-delay: 0.2s; } 
+.semantic-search-wrapper .delay-3 { animation-delay: 0.3s; }

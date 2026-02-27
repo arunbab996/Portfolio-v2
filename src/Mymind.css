@@ -1,0 +1,35 @@
+/* src/Mymind.css */
+.mymind-wrapper {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111219;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  padding: 60px 24px 80px;
+}
+
+.mymind-wrapper .container { max-width: 680px; margin: 0 auto; }
+
+.mymind-wrapper a.back { font-size: 14px; font-weight: 600; color: #5b6066; text-decoration: none; display: inline-block; margin-bottom: 24px; transition: color 0.2s; }
+.mymind-wrapper a.back:hover { color: #111219; }
+
+.mymind-wrapper h1 { font-size: 32px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em; line-height: 1.2; }
+.mymind-wrapper .meta-line { font-size: 15px; color: #5b6066; margin-bottom: 32px; }
+
+.mymind-wrapper h2 { font-size: 22px; margin: 48px 0 16px 0; font-weight: 700; letter-spacing: -0.01em; }
+.mymind-wrapper p { font-size: 17px; margin: 0 0 20px 0; color: #333; }
+.mymind-wrapper strong { font-weight: 600; color: #000; }
+
+.mymind-wrapper ul { margin: 20px 0 32px 20px; padding: 0; color: #333; }
+.mymind-wrapper ul li { margin: 8px 0; padding-left: 4px; font-size: 17px; }
+
+.mymind-wrapper img.hero { width: 100%; height: auto; border-radius: 8px; margin: 8px 0 40px 0; object-fit: cover; background-color: #f4f5f7; border: 1px solid rgba(0,0,0,0.06); display: block; }
+
+.mymind-wrapper blockquote { border-left: 3px solid #e5e7eb; margin: 32px 0; padding-left: 20px; font-style: italic; font-size: 18px; color: #5b6066; }
+
+/* Animations */
+@keyframes mymindFadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.mymind-wrapper .animate-entry { opacity: 0; animation: mymindFadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.mymind-wrapper .delay-1 { animation-delay: 0.1s; }
+.mymind-wrapper .delay-2 { animation-delay: 0.2s; }
+.mymind-wrapper .delay-3 { animation-delay: 0.3s; }
+.mymind-wrapper .delay-4 { animation-delay: 0.4s; }

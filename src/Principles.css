@@ -1,0 +1,58 @@
+/* src/Principles.css */
+.principles-wrapper {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--text); /* FIX: Replaced hardcoded black */
+  max-width: 640px;
+  margin: 48px auto;
+  padding: 0 16px 140px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.principles-wrapper .page-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: var(--text); /* FIX: Explicitly adapts to dark mode */
+}
+
+.principles-wrapper ul {
+  list-style: none;
+  counter-reset: p;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes principleFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.principles-wrapper li {
+  counter-increment: p;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  opacity: 0;
+  animation: principleFadeUp 0.5s cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+.principles-wrapper li::before {
+  content: counter(p) ".";
+  width: 28px;
+  text-align: right;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: var(--text); /* FIX: List numbers adapt */
+}
+
+.principles-wrapper li strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text); /* FIX: Principle titles adapt */
+}
+
+.principles-wrapper li p {
+  color: var(--muted); /* FIX: Principle descriptions adapt */
+  line-height: 1.45;
+  margin: 0;
+}

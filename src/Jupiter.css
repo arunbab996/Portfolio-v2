@@ -1,0 +1,46 @@
+/* src/Jupiter.css */
+.jupiter-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  color: #111827;
+  -webkit-font-smoothing: auto; /* Restores thicker Apple font rendering */
+  -moz-osx-font-smoothing: auto;
+  padding: 40px 24px;
+}
+
+.jupiter-wrapper .container { max-width: 720px; margin: 0 auto; }
+.jupiter-wrapper a.back { font-size: 14px; color: #9ca3af; text-decoration: none; display: inline-block; margin-bottom: 10px; transition: color 0.2s; }
+.jupiter-wrapper a.back:hover { color: #111827; }
+
+.jupiter-wrapper h1 { font-size: 32px; font-weight: 600; margin: 12px 0 4px 0; }
+.jupiter-wrapper .subtitle { font-size: 15px; color: #6b7280; margin-bottom: 24px; }
+
+.jupiter-wrapper .hero { width: 100%; border-radius: 6px; margin-bottom: 28px; display: block; overflow: hidden; background-color: #eee; }
+.jupiter-wrapper .hero img { width: 100%; height: auto; display: block; border-radius: 6px; }
+
+.jupiter-wrapper h2 { font-size: 20px; margin: 28px 0 10px 0; font-weight: 600; }
+.jupiter-wrapper h3 { font-size: 16px; margin: 12px 0 8px 0; }
+.jupiter-wrapper p { font-size: 17px; line-height: 1.55; margin: 0 0 14px 0; color: #172031; }
+
+.jupiter-wrapper ul { margin: 8px 0 14px 20px; color: #172031; line-height: 1.5; }
+.jupiter-wrapper ul li { margin: 6px 0; }
+
+.jupiter-wrapper .figure { margin: 18px 0; text-align: center; }
+.jupiter-wrapper .figure img { max-width: 720px; width: 100%; border-radius: 8px; border: 1px solid #eef2f7; display: block; margin: 0 auto; }
+.jupiter-wrapper figcaption { font-size: 13px; color: #6b7280; margin-top: 8px; text-align: center; }
+
+.jupiter-wrapper hr.sep { border: 0; border-top: 1px solid #eef2f7; margin: 26px 0; }
+
+/* Animations */
+@keyframes jupiterFadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.jupiter-wrapper .animate-entry { opacity: 0; animation: jupiterFadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.jupiter-wrapper .delay-1 { animation-delay: 0.1s; } 
+.jupiter-wrapper .delay-2 { animation-delay: 0.2s; }
+.jupiter-wrapper .delay-3 { animation-delay: 0.3s; } 
+.jupiter-wrapper .delay-4 { animation-delay: 0.4s; }
+
+@media (max-width:520px) {
+  .jupiter-wrapper .container { max-width: 520px; }
+  .jupiter-wrapper h1 { font-size: 28px; }
+  .jupiter-wrapper p { font-size: 15px; }
+  .jupiter-wrapper .figure img { max-width: 100%; }
+}
