@@ -1,40 +1,54 @@
 /* src/Specter.css */
-.specter-wrapper {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
-  color: #111827;
-  -webkit-font-smoothing: auto; /* Restores thicker Apple font rendering */
-  -moz-osx-font-smoothing: auto;
-  padding: 40px 24px;
-}
 
-.specter-wrapper .container { max-width: 720px; margin: 0 auto; }
-.specter-wrapper a.back { font-size: 14px; color: #9ca3af; text-decoration: none; display: inline-block; margin-bottom: 10px; transition: color 0.2s; }
-.specter-wrapper a.back:hover { color: #111827; }
+/* ==========================================================
+   CSS QUARANTINE:
+   Everything inside here is locked to the Specter case study.
+========================================================== */
+.case-study-quarantine {
 
-.specter-wrapper h1 { font-size: 28px; font-weight: 600; margin: 8px 0 6px 0; }
-.specter-wrapper .meta-line { font-size: 14px; color: #6b7280; margin-bottom: 18px; }
+  .specter-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+    color: #111827;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    padding: 40px 24px;
+  }
 
-.specter-wrapper img.hero { width: 100%; border-radius: 6px; margin: 14px 0 22px 0; background-color: #eee; display: block; }
+  .specter-wrapper .container { max-width: 720px; margin: 0 auto; }
+  .specter-wrapper a.back { font-size: 14px; color: #9ca3af; text-decoration: none; display: inline-block; margin-bottom: 10px; transition: color 0.2s; }
+  .specter-wrapper a.back:hover { color: #111827; }
 
-.specter-wrapper h2 { font-size: 20px; margin: 28px 0 10px 0; font-weight: 600; }
-.specter-wrapper p { font-size: 17px; line-height: 1.55; margin: 0 0 14px 0; color: #172031; }
-.specter-wrapper ul { margin: 8px 0 14px 20px; padding-left: 20px; line-height: 1.5; color: #172031; }
-.specter-wrapper ul li { margin: 6px 0; }
+  .specter-wrapper h1 { font-size: 28px; font-weight: 600; margin: 8px 0 6px 0; }
+  .specter-wrapper .meta-line { font-size: 14px; color: #6b7280; margin-bottom: 18px; }
 
-.specter-wrapper figure.figure-card { background: #ffffff; border-radius: 8px; padding: 12px; border: 1px solid #eef2f7; margin: 20px 0; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 20px rgba(15,23,36,0.04); }
-.specter-wrapper figure.figure-card img { max-width: 720px; width: 100%; border-radius: 6px; }
-.specter-wrapper figcaption { text-align: center; font-size: 13px; color: #6b7280; margin-top: 10px; }
+  .specter-wrapper img.hero { width: 100%; border-radius: 6px; margin: 14px 0 22px 0; background-color: #eee; display: block; }
 
-/* Animations */
-@keyframes specterFadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-.specter-wrapper .animate-entry { opacity: 0; animation: specterFadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
-.specter-wrapper .delay-1 { animation-delay: 0.1s; } 
-.specter-wrapper .delay-2 { animation-delay: 0.2s; }
-.specter-wrapper .delay-3 { animation-delay: 0.3s; } 
-.specter-wrapper .delay-4 { animation-delay: 0.4s; }
+  .specter-wrapper h2 { font-size: 20px; margin: 28px 0 10px 0; font-weight: 600; }
+  .specter-wrapper p { font-size: 17px; line-height: 1.55; margin: 0 0 14px 0; color: #172031; }
+  .specter-wrapper ul { margin: 8px 0 14px 20px; padding-left: 20px; line-height: 1.5; color: #172031; }
+  .specter-wrapper ul li { margin: 6px 0; }
 
-@media (max-width:520px) {
-  .specter-wrapper .container { max-width: 520px; }
-  .specter-wrapper h1 { font-size: 28px; }
-  .specter-wrapper p { font-size: 15px; }
+  .specter-wrapper figure.figure-card { background: #ffffff; border-radius: 8px; padding: 12px; border: 1px solid #eef2f7; margin: 20px 0; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 20px rgba(15,23,36,0.04); }
+  .specter-wrapper figure.figure-card img { max-width: 720px; width: 100%; border-radius: 6px; }
+  .specter-wrapper figcaption { text-align: center; font-size: 13px; color: #6b7280; margin-top: 10px; }
+
+  .specter-wrapper .animate-entry { opacity: 0; animation: specterFadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+  .specter-wrapper .delay-1 { animation-delay: 0.1s; } 
+  .specter-wrapper .delay-2 { animation-delay: 0.2s; }
+  .specter-wrapper .delay-3 { animation-delay: 0.3s; } 
+  .specter-wrapper .delay-4 { animation-delay: 0.4s; }
+
+  @media (max-width:520px) {
+    .specter-wrapper .container { max-width: 520px; }
+    .specter-wrapper h1 { font-size: 28px; }
+    .specter-wrapper p { font-size: 15px; }
+  }
+
+} /* <-- End of Quarantine */
+
+
+/* Animations run globally so they don't break in older browsers */
+@keyframes specterFadeInUp { 
+  from { opacity: 0; transform: translateY(20px); } 
+  to { opacity: 1; transform: translateY(0); } 
 }
