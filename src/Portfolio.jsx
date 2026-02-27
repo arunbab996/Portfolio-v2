@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export default function Portfolio() {
   return (
     <main className="portfolio-main stagger-content">
@@ -6,7 +7,7 @@ export default function Portfolio() {
         <div className="col-header">Product Perspectives</div>
         
         <div className="grid-layout">
-          <a href="/portfolio/specter/" className="project-card">
+          <Link to="/portfolio/specter/" className="project-card">
             <img 
               src="/images/0.webp" 
               alt="Specter Talent" 
@@ -17,9 +18,9 @@ export default function Portfolio() {
               <div className="project-title">Specter Talent</div>
               <div className="project-tagline">Building the founder discovery engine powering modern startup scouting.</div>
             </div>
-          </a>
+          </Link>
           
-          <a href="/portfolio/semanticrentalsearch/" className="project-card">
+          <Link to="/portfolio/semanticrentalsearch/" className="project-card">
             <img 
               src="/images/semantic.png" 
               alt="Intent-Driven Rental Search" 
@@ -30,9 +31,9 @@ export default function Portfolio() {
               <div className="project-title">Intent-Driven Rental Search</div>
               <div className="project-tagline">Designed a semantic + agent-based search flow to reduce time-to-rent by removing filter overload.</div>
             </div>
-          </a>
+          </Link>
           
-          <a href="/portfolio/homehunter/" className="project-card">
+          <Link to="/portfolio/homehunter/" className="project-card">
             <img 
               src="https://res.cloudinary.com/dp67k01qy/image/upload/v1766217335/Gemini_Generated_Image_njmoz2njmoz2njmo_nxjofd.png" 
               alt="HomeHunter" 
@@ -43,9 +44,9 @@ export default function Portfolio() {
               <div className="project-title">HomeHunter</div>
               <div className="project-tagline">Marketplace validation & scale decision.</div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/portfolio/mymind/" className="project-card">
+          <Link to="/portfolio/mymind/" className="project-card">
             <img 
               src="/portfolio/mymind/images/hero.png" 
               alt="mymind" 
@@ -56,9 +57,9 @@ export default function Portfolio() {
               <div className="project-title">My Favourite Product: mymind</div>
               <div className="project-tagline">Why this AI-powered extension changed how I think and create.</div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/portfolio/dunzo/" className="project-card">
+          <Link to="/portfolio/dunzo/" className="project-card">
             <img 
               src="/images/1.webp" 
               alt="Dunzo" 
@@ -69,9 +70,9 @@ export default function Portfolio() {
               <div className="project-title">Dunzo: AOV Optimization</div>
               <div className="project-tagline">The Tale of Maximising Average Order Value.</div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/portfolio/jupiter/" className="project-card">
+          <Link to="/portfolio/jupiter/" className="project-card">
             <img 
               src="/images/2.webp" 
               alt="Jupiter Gamification" 
@@ -82,9 +83,9 @@ export default function Portfolio() {
               <div className="project-title">Jupiter: App Gamification</div>
               <div className="project-tagline">Incorporating game elements into a Neobank experience.</div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/portfolio/swiggy/" className="project-card">
+          <Link to="/portfolio/swiggy/" className="project-card">
             <img 
               src="/images/3.jpeg" 
               alt="Swiggy" 
@@ -95,7 +96,7 @@ export default function Portfolio() {
               <div className="project-title">Swiggy: Bulk Delivery</div>
               <div className="project-tagline">How to tackle multiple food orders from multiple restaurants.</div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
 
