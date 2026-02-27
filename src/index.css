@@ -241,15 +241,30 @@ header {
 /* ==========================================================
    DARK MODE OVERRIDES FOR CASE STUDY TABLES
 ========================================================== */
-body.dark-theme table th,
-.dark-theme .case-study-quarantine th {
-  background-color: #1f2937 !important; /* Changes header background to dark gray */
-  color: #f9fafb !important; /* Ensures text is stark white */
+.dark-theme .case-study-quarantine table th,
+.dark-theme .case-study-quarantine thead th {
+  background: #1f2937 !important; 
+  background-color: #1f2937 !important; 
+  color: #ffffff !important; 
   border-bottom: 1px solid #374151 !important;
 }
 
-body.dark-theme table td,
-.dark-theme .case-study-quarantine td {
-  border-bottom: 1px solid #374151 !important; /* Darkens the borders between rows */
+.dark-theme .case-study-quarantine table td,
+.dark-theme .case-study-quarantine tbody td {
+  border-bottom: 1px solid #374151 !important; 
+  background: transparent !important;
   background-color: transparent !important;
+  color: #d1d5db !important;
+}
+
+/* Force the hover states to behave */
+.dark-theme .case-study-quarantine table tr:hover th,
+.dark-theme .case-study-quarantine table th:hover {
+  background: #1f2937 !important;
+  background-color: #1f2937 !important;
+}
+
+.dark-theme .case-study-quarantine table tr:hover td {
+  background: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
