@@ -237,3 +237,19 @@ header {
 .dark-theme hr.sep {
   border-top-color: var(--card-border) !important;
 }
+
+/* ==========================================================
+   DARK MODE OVERRIDES FOR CASE STUDY TABLES
+========================================================== */
+body.dark-theme table th,
+.dark-theme .case-study-quarantine th {
+  background-color: #1f2937 !important; /* Changes header background to dark gray */
+  color: #f9fafb !important; /* Ensures text is stark white */
+  border-bottom: 1px solid #374151 !important;
+}
+
+body.dark-theme table td,
+.dark-theme .case-study-quarantine td {
+  border-bottom: 1px solid #374151 !important; /* Darkens the borders between rows */
+  background-color: transparent !important;
+}
