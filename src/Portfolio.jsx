@@ -298,7 +298,7 @@ export default function Portfolio() {
             />
             <div className="tool-meta">
               <div className="tool-title">PropTech Supply Intel Dashboard</div>
-              <div className="tool-sub">Bengaluru rental supply acquisition heatmap — mapping where to source properties and at what scale.</div>
+              <div className="tool-sub">Bengaluru rental supply acquisition heatmap, mapping where to source properties and at what scale.</div>
             </div>
           </a>
 
