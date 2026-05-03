@@ -261,16 +261,56 @@ export default function Portfolio() {
           </a>
 
           <a href="https://polaroid-sand.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
-            <img 
-              className="tool-thumb" 
-              src="/images/polaroid.png" 
-              alt="Polaroid" 
+            <img
+              className="tool-thumb"
+              src="/images/polaroid.png"
+              alt="Polaroid"
               style={{ opacity: 0, transition: 'opacity 0.4s ease' }}
               onLoad={(e) => e.target.style.opacity = 1}
             />
             <div className="tool-meta">
               <div className="tool-title">Polaroid</div>
               <div className="tool-sub">A fun image-editing tool that instantly transforms user uploads into classic Polaroid-style photos.</div>
+            </div>
+          </a>
+
+          <a href="https://mission-control-rho-roan.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
+            <div className="canvas-frame" style={{ backgroundColor: '#0f172a' }}></div>
+            <div className="tool-meta">
+              <div className="tool-title">Mission Control v2.0</div>
+              <div className="tool-sub">Venture operating system for portfolio management.</div>
+            </div>
+          </a>
+
+          <a href="https://helium-xi.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
+            <div className="canvas-frame" style={{ backgroundColor: '#14532d' }}></div>
+            <div className="tool-meta">
+              <div className="tool-title">PropTech Supply Intel Dashboard</div>
+              <div className="tool-sub">Bengaluru rental supply acquisition heatmap — mapping where to source properties and at what scale.</div>
+            </div>
+          </a>
+
+          <a href="https://heliumuserflow.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
+            <div className="canvas-frame" style={{ backgroundColor: '#1e3a8a' }}></div>
+            <div className="tool-meta">
+              <div className="tool-title">PropTech Renter Onboarding Flow</div>
+              <div className="tool-sub">End-to-end renter onboarding prototype built for a Bengaluru-based rental platform.</div>
+            </div>
+          </a>
+
+          <a href="https://unibloxsoc2.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
+            <div className="canvas-frame" style={{ backgroundColor: '#1e293b' }}></div>
+            <div className="tool-meta">
+              <div className="tool-title">SOC 2 Compliance Tracker</div>
+              <div className="tool-sub">SOC 2 readiness tracker built to help a B2B SaaS product navigate enterprise compliance requirements.</div>
+            </div>
+          </a>
+
+          <a href="https://mintandlily.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
+            <div className="canvas-frame" style={{ backgroundColor: '#4a1942' }}></div>
+            <div className="tool-meta">
+              <div className="tool-title">CS Agent + Review Intelligence</div>
+              <div className="tool-sub">Two-tab dashboard combining AI-powered customer support and review intelligence for a jewellery ecommerce brand.</div>
             </div>
           </a>
         </div>
