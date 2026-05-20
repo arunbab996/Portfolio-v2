@@ -274,6 +274,20 @@ export default function Portfolio() {
             </div>
           </a>
 
+          <a href="https://equiparse.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
+            <img
+              className="tool-thumb"
+              src="/images/equiparser.png"
+              alt="EquiParser"
+              style={{ opacity: 0, transition: 'opacity 0.4s ease' }}
+              onLoad={(e) => e.target.style.opacity = 1}
+            />
+            <div className="tool-meta">
+              <div className="tool-title">EquiParser</div>
+              <div className="tool-sub">Upload an ESOP grant letter and GPT-4o extracts 19 structured fields, checks SEBI compliance, and estimates Indian tax impact.</div>
+            </div>
+          </a>
+
           <a href="https://mission-control-rho-roan.vercel.app" className="tool-card" target="_blank" rel="noopener noreferrer">
             <img
               className="tool-thumb"
