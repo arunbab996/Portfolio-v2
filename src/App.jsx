@@ -14,6 +14,7 @@ import SemanticSearch from './SemanticSearch';
 import Bookshelf from './Bookshelf';
 import Principles from './Principles';
 import Photography from './Photography';
+import Vault from './Vault';
 import './index.css';
 
 // Sleek SVG Icons
@@ -119,6 +120,7 @@ function AppContent() {
       <Route path="/portfolio/jupiter" element={<Jupiter />} />
       <Route path="/portfolio/mymind" element={<Mymind />} />
       <Route path="/portfolio/semanticrentalsearch" element={<SemanticSearch />} />
+      <Route path="/vault" element={<Vault />} />
     </Routes>
   );
 }
