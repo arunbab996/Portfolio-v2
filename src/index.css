@@ -132,9 +132,30 @@ header {
 .pop-link { position: relative; display: inline-block; cursor: pointer; }
 .pop-img { position: absolute; bottom: 100%; left: 50%; transform: translate(-50%, 10px); width: 48px; height: auto; opacity: 0; visibility: hidden; transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 100; border-radius: 8px; box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.1); pointer-events: none; background: white; }
 .pop-link:hover .pop-img { opacity: 1; visibility: visible; transform: translate(-50%, -10px); }
-.pop-img.pop-lg { width: 130px; background: transparent; box-shadow: none; border-radius: 0; }
-.pop-link.pop-side .pop-img { bottom: auto; left: auto; right: 100%; top: 50%; transform: translateY(-50%) translateX(20px); margin-right: 20px; }
-.pop-link.pop-side:hover .pop-img { opacity: 1; visibility: visible; transform: translateY(-50%) translateX(0); }
+
+/* Peeping avatar — bottom-left corner on name hover */
+.peep-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 160px;
+  height: 63px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 999;
+}
+.peep-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: auto;
+  transform: translateY(100%);
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.peep-container.peep-active .peep-img {
+  transform: translateY(0);
+}
 
 /* =========================================
    5. PORTFOLIO PAGE

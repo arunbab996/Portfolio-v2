@@ -1,12 +1,19 @@
+import { useState } from 'react';
+
 export default function Home() {
+  const [isPeeping, setIsPeeping] = useState(false);
+
   return (
     <>
       <main id="app" className="index-page-content">
         <section className="stagger-content">
-          
-          <div className="name pop-link pop-side">
+
+          <div
+            className="name"
+            onMouseEnter={() => setIsPeeping(true)}
+            onMouseLeave={() => setIsPeeping(false)}
+          >
             Arun Baburaj
-            <img src="/avatar.jpg" alt="Me waving" className="pop-img pop-lg" />
           </div>
 
           <div className="desc">
@@ -29,6 +36,10 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <div className={`peep-container${isPeeping ? ' peep-active' : ''}`} aria-hidden="true">
+        <img src="/avatar.jpg" alt="" className="peep-img" />
+      </div>
 
       {/* Social Icons - Now ONLY on the Index Page */}
       <div className="social-fixed">
