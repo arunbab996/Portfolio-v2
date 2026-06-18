@@ -6,9 +6,9 @@
   --text: #111219;
   --muted: #5b6066;
   --nav-bg: transparent;
-  --nav-border: rgba(0,0,0,0.06);
-  --card-bg: rgba(255,255,255,0.03);
-  --card-border: rgba(0,0,0,0.03);
+  --nav-border: rgba(0,0,0,0.08);
+  --card-bg: rgba(255,255,255,0.72);
+  --card-border: rgba(0,0,0,0.10);
 }
 
 /* The Global Dark Theme Override */
