@@ -2,7 +2,7 @@
    1. GLOBAL VARIABLES & THEME ENGINE
    ========================================= */
 :root {
-  --bg: #dbe2eb; 
+  --bg: #F5F0EB;
   --text: #111219;
   --muted: #5b6066;
   --nav-bg: transparent;
@@ -104,22 +104,22 @@ header {
   margin: 64px auto; 
   padding: 0 16px 120px;
 }
-.name { 
-  font-weight: 700; font-size: 38px; letter-spacing: -0.03em; margin-bottom: 24px; 
-  color: var(--text); /* Fixed for Dark Mode */
-  font-family: 'DM Sans', sans-serif !important; 
+.name {
+  font-weight: 800; font-size: 60px; letter-spacing: -0.02em; margin-bottom: 28px; line-height: 1.05;
+  color: var(--text);
+  font-family: 'Playfair Display', serif !important;
 }
-.desc { 
-  font-size: 21px; line-height: 1.5; max-width: 600px; 
-  color: var(--text); /* Fixed for Dark Mode */
+.desc {
+  font-size: 22px; line-height: 1.6; max-width: 600px;
+  color: var(--text);
 }
-.desc span { 
-  font-family: 'DM Serif Display', serif !important; font-style: italic; font-size: 26px; padding-right: 4px; 
-  color: var(--text); /* Fixed for Dark Mode */
+.desc span {
+  font-family: 'Playfair Display', serif !important; font-style: italic; font-size: 26px; padding-right: 4px;
+  color: var(--text);
 }
-.current { 
-  display: block; margin-top: 36px; font-size: 19px; line-height: 1.6; max-width: 560px; 
-  color: var(--muted); /* Fixed for Dark Mode */
+.current {
+  display: block; margin-top: 40px; font-size: 18px; line-height: 1.7; max-width: 560px;
+  color: var(--muted);
 }
 .spacer { display: block; margin-bottom: 24px; }
 .current a { 
@@ -239,32 +239,33 @@ header {
 }
 
 /* ==========================================================
-   DARK MODE OVERRIDES FOR CASE STUDY TABLES
+   FORCE OVERRIDE: CASE STUDY TABLES IN DARK MODE
 ========================================================== */
-.dark-theme .case-study-quarantine table th,
-.dark-theme .case-study-quarantine thead th {
-  background: #1f2937 !important; 
-  background-color: #1f2937 !important; 
-  color: #ffffff !important; 
+body.dark-theme.dark-theme .case-study-quarantine table thead,
+body.dark-theme.dark-theme .case-study-quarantine table thead tr,
+body.dark-theme.dark-theme .case-study-quarantine table thead th,
+body.dark-theme.dark-theme .case-study-quarantine table th {
+  background: #1f2937 !important;
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
   border-bottom: 1px solid #374151 !important;
 }
 
-.dark-theme .case-study-quarantine table td,
-.dark-theme .case-study-quarantine tbody td {
-  border-bottom: 1px solid #374151 !important; 
+body.dark-theme.dark-theme .case-study-quarantine table tbody td {
   background: transparent !important;
   background-color: transparent !important;
-  color: #d1d5db !important;
+  color: #e5e7eb !important;
+  border-bottom: 1px solid #374151 !important;
 }
 
 /* Force the hover states to behave */
-.dark-theme .case-study-quarantine table tr:hover th,
-.dark-theme .case-study-quarantine table th:hover {
+body.dark-theme.dark-theme .case-study-quarantine table tr:hover th,
+body.dark-theme.dark-theme .case-study-quarantine table th:hover {
   background: #1f2937 !important;
   background-color: #1f2937 !important;
 }
 
-.dark-theme .case-study-quarantine table tr:hover td {
+body.dark-theme.dark-theme .case-study-quarantine table tbody tr:hover td {
   background: rgba(255, 255, 255, 0.05) !important;
   background-color: rgba(255, 255, 255, 0.05) !important;
 }
