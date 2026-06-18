@@ -26,7 +26,7 @@ export default function Home() {
             <span className="spacer">
               I'm currently leading a product at{' '}
               <a href="https://tryspecter.com" target="_blank" rel="noopener noreferrer">
-                Specter<img src="/specterhq_logo (2).jpeg" alt="Specter Logo" className="specter-logo-inline" />
+                <img src="/specterhq_logo (2).jpeg" alt="Specter Logo" className="specter-logo-inline" />Specter
               </a>.
             </span>
 
